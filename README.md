@@ -2,6 +2,10 @@
 
 Single-facility instrument-identification demonstration. Run `npm start`, then open `http://localhost:4173`. Run `npm test` for identity and applicability checks. Node 20+ is sufficient; there is no install or build step.
 
+## Alternate GitHub Pages access
+
+The primary demo address is `https://instrumentdex.com/`. If a restricted network cannot reach that domain, use the GitHub Pages fallback at `https://teephan61.github.io/InstrumentDex-demo/`. It runs the same static frontend and Supabase backend, and intentionally has no custom-domain configuration.
+
 ## Shared tester playground
 
 The static site can optionally save and retrieve shared tester drafts through Supabase. Before using it, run the SQL migration and approve the intended tester accounts as described in [supabase/README.md](supabase/README.md). The browser configuration contains only the provided publishable key; RLS and authenticated RPC checks protect the database.
